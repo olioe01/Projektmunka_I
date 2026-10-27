@@ -1,0 +1,52 @@
+{
+  "sklearn_version": "1.9.1",
+  "split": "article-group holdout; exact test sentences excluded from training",
+  "random_state": 42,
+  "clean_pairs": 7432,
+  "train_samples": 11816,
+  "test_samples": 3048,
+  "train_articles": 599,
+  "test_articles": 150,
+  "models": [
+    {
+      "id": "model-1",
+      "name": "Naiv Bayes",
+      "description": "Multinomiális Naiv Bayes",
+      "artifact": "model-1.joblib",
+      "metrics": {
+        "accuracy": 0.8110236220472441,
+        "f1": 0.813350615683733
+      }
+    },
+    {
+      "id": "model-2",
+      "name": "Logisztikus regresszió",
+      "description": "Lineáris osztályozó",
+      "artifact": "model-2.joblib",
+      "metrics": {
+        "accuracy": 0.8139763779527559,
+        "f1": 0.817860584645037
+      }
+    },
+    {
+      "id": "model-3",
+      "name": "Lineáris SVM",
+      "description": "Tartóvektor-gép",
+      "artifact": "model-3.joblib",
+      "metrics": {
+        "accuracy": 0.8169291338582677,
+        "f1": 0.8209242618741976
+      }
+    },
+    {
+      "id": "model-4",
+      "name": "Random Forest",
+      "description": "100 döntési fa",
+      "artifact": "model-4.joblib",
+      "metrics": {
+        "accuracy": 0.7611548556430446,
+        "f1": 0.7466945024356297
+      }
+    }
+  ]
+}

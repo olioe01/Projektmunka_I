@@ -67,6 +67,8 @@ def predict(text):
             if hasattr(pipeline, 'predict_proba'):
                 probabilities = pipeline.predict_proba([text])[0]
                 result['probability'] = float(probabilities[list(pipeline.classes_).index(label)])
+            elif hasattr(pipeline, 'decision_function'):
+                result['decision_margin'] = abs(float(pipeline.decision_function([text])[0]))
             results.append(result)
         except FileNotFoundError:
             results.append({'id': model['id'], 'status': 'unavailable', 'message': 'A betanított modell még nem érhető el. Futtasd a start.sh indítót.'})

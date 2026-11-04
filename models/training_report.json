@@ -15,7 +15,7 @@
       "artifact": "model-1.joblib",
       "metrics": {
         "accuracy": 0.8110236220472441,
-        "f1": 0.813350615683733
+        "f1": 0.8137128072445019
       }
     },
     {
@@ -24,8 +24,8 @@
       "description": "Lineáris osztályozó",
       "artifact": "model-2.joblib",
       "metrics": {
-        "accuracy": 0.8139763779527559,
-        "f1": 0.817860584645037
+        "accuracy": 0.8133202099737533,
+        "f1": 0.8174526788578762
       }
     },
     {
@@ -34,8 +34,8 @@
       "description": "Tartóvektor-gép",
       "artifact": "model-3.joblib",
       "metrics": {
-        "accuracy": 0.8169291338582677,
-        "f1": 0.8209242618741976
+        "accuracy": 0.8143044619422573,
+        "f1": 0.8184733803720333
       }
     },
     {
@@ -44,8 +44,8 @@
       "description": "100 döntési fa",
       "artifact": "model-4.joblib",
       "metrics": {
-        "accuracy": 0.7611548556430446,
-        "f1": 0.7466945024356297
+        "accuracy": 0.759514435695538,
+        "f1": 0.7466297960594539
       }
     }
   ]

@@ -50,6 +50,15 @@ class ServerTests(unittest.TestCase):
             results = server.predict('Medical text.')
         self.assertTrue(all(r['status'] == 'ok' and 'probability' not in r for r in results))
 
+    def test_svm_margin_is_absolute_and_not_a_probability(self):
+        class MarginClassifier(Classifier):
+            def decision_function(self, texts): return [-1.75]
+            def predict(self, texts): return [0]
+        with patch.object(server, 'load_model', return_value=MarginClassifier()):
+            results = server.predict('Medical text.')
+        self.assertTrue(all(r['prediction'] == 'Laikus' and r['decision_margin'] == 1.75
+                            and 'probability' not in r for r in results))
+
     def test_missing_models_are_not_predictions(self):
         with patch.object(server, 'load_model', side_effect=FileNotFoundError):
             results = server.predict('Medical text.')

@@ -58,7 +58,7 @@ def main():
     specs = [
         ('model-1', 'Naiv Bayes', 'Multinomiális Naiv Bayes', MultinomialNB(alpha=1.0)),
         ('model-2', 'Logisztikus regresszió', 'Lineáris osztályozó', LogisticRegression(C=1., max_iter=1000, random_state=42)),
-        ('model-3', 'Lineáris SVM', 'Tartóvektor-gép', SVC(kernel='linear', C=1., random_state=42)),
+        ('model-3', 'Lineáris SVM', 'Tartóvektor-gép', SVC(kernel='linear', C=1., probability=True, random_state=42)),
         ('model-4', 'Random Forest', '100 döntési fa', RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=1)),
     ]
     manifest = []

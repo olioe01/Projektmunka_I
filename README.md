@@ -43,6 +43,8 @@ Következő indításkor Linuxon/macOS-en ismét a `./start.sh`, Windowson a `.\
 
 ## Mélytanulásos modellek (DL)
 
+**Ki mit csinál, és mit írj az AI-nak: [FELADATOK.md](FELADATOK.md)**
+
 Közös keret a négy DL modellhez: `dl_prep.py`. Ugyanazt a tisztítást (7432 pár) és a `train_models.py` cikkenkénti felosztását használja, mint a klasszikus modellek. Ehhez jön még egy validációs halmaz (a train 12%-a cikkenként), egyetlen, csak train-en illesztett tokenizer (`num_words=20 000`, `maxlen` = 95. percentilis = 48), valamint közös tanítási és kiértékelési függvények.
 
 ```bash

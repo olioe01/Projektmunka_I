@@ -1,0 +1,7 @@
+# A mélytanulásos (DL) notebookokhoz – a webes alkalmazásnak nem kell.
+# Telepítés: .venv/bin/python -m pip install -r requirements-lock.txt -r requirements-dl.txt
+tensorflow>=2.16,<3
+matplotlib>=3.8
+seaborn>=0.13
+nbconvert>=7
+ipykernel>=6

@@ -4,7 +4,7 @@
 |---|---|---|---|
 | 1 | Olivér | Embedding + GlobalAveragePooling1D (baseline), közös kód, összehasonlítás | `results/baseline.json` ✅ kész |
 | 2 | András | Embedding + Bidirectional(LSTM) | `results/bilstm.json` ✅ kész |
-| 3 | Barni | Embedding + Conv1D + GlobalMaxPooling1D | `results/cnn.json` |
+| 3 | Barni | Embedding + Conv1D + GlobalMaxPooling1D | `results/cnn.json` ✅ kész |
 | 4 | Attila | Embedding + Bidirectional(GRU) | `results/bigru.json` |
 
 ## Mindenkire vonatkozik
